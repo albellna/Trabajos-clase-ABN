@@ -1,0 +1,15 @@
+{
+  "name": "ae3-abn",
+  "version": "0.0.1",
+  "description": "Proyecto de Alvaro Bellmunt AE3",
+  "main": "index.js",
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/albellna/AE3.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Alvaro Bellmunt",
+  "license": "ISC"
+}

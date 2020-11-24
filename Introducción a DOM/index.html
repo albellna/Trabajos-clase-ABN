@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="main.js"></script>
+        <link rel="stylesheet" href="index.css">
+        <title>Page Title</title>
+    </head>
+    <body onload="ejercicio5()">
+        <section>
+            <h1>Trabajo con selectores</h1>
+            <p>
+                Crea un documento HTML que tenga un título de cabecera de primer nivel “Trabajo
+                con selectores” y a continuación contenga un párrafo, dentro de un artículo, con este
+                mismo texto descriptivo de la actividad. Estos dos elementos deben estar presentes
+                dentro de una sección (parte diferenciada del documento)
+                Tras el párrafo debe haber otra sección con una imagen que apunte a un recurso
+                externo (una URL a una imagen). Dicha imagen debe estar centrada en la pantalla y
+                debe tener un ancho de 300 píxels y un alto de 200 píxels.
+                Debajo de la imagen, dentro de la misma sección, centrado horizontalmente, debe
+                haber un botón con la etiqueta “Cambiar imagen”. Dicho botón debe tener los bordes
+                redondeados, el fondo de color azul y el texto de color blanco (debe contrastar).
+                El color de fondo de todo el documento debe ser gris plata (“silver”) y la fuente de todo
+                texto contenido en el cuerpo del documento, debe ser “sans-serif”.
+                El documento debe tener un pie de página de color de fondo negro y color de texto
+                blanco, con fuente relativamente más pequeña, en el que ponga claramente el nombre
+                de la persona que lo ha desarrollado, en este caso, el tuyo, precedido del símbolo de
+                copyright y el año de desarrollo.
+                Tu nombre y el símbolo de copyright deben conformar un enlace al modelo de licencia
+                que quieras para tu documento.
+            </p>
+            <div id = "divCont"></div>
+            <img id="foto1" src="https://images-cdn.9gag.com/photo/2819519_700b.jpg" alt="Steve Buscemi Photoshopeado" class="center">
+        </section>
+        <button type="button" id="boton" class="boton" onclick="CambioImg()">Cambiar imagen</button>
+    </body>
+    <footer class="lic"><p>2020 - <a class="lic" href="https://www.gnu.org/licenses/gpl-3.0.txt">&copy Álvaro Bellmunt Navalón</a></p></footer>
+</html>

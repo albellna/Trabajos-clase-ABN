@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Proyecto AE3</title>
+    <link rel="stylesheet" href="index.css"/>
+    <script src="index.js"></script>
+</head>
+<body>
+    <header>
+        <div class="cabeceraBotones">
+            <button id="atrasBoton" onclick="" class="elementHide botonPrimarioAtras">Atr&aacute;s</button>
+            <button id="continuarBoton" onclick="validacionToPag2()"" class="botonPrimarioContinuar">Continuar</button>
+        </div>
+        <div>
+            <p id="headerErrorTitle" class="elementHide">Revisa los siguientes campos:</p>
+            <p id="headerError1" class="elementHide classHeaderError"></p>
+            <p id="headerError2" class="elementHide classHeaderError"></p>
+            <p id="headerError3" class="elementHide classHeaderError"></p>
+            <p id="headerError4" class="elementHide classHeaderError"></p>
+            <p id="headerError5" class="elementHide classHeaderError"></p>
+        </div>
+    </header>
+    <p id="errorDisplay"></p>
+    <section id="sectionPag1">
+        <h1>Proyecto Actividad 3</h1>
+        <p id="textPag1">
+            En esta p&aacute;gina introduciremos una URL v&aacute;lida a la cual queramos acceder al acabar el formulario.
+            La siguiente p&aacute;gina contiene un formulario en el cual rellenaremos los campos necesarios.
+            En la tercera p&aacute;gina tendremos una visualizaci&oacute;n de los datos introducidos en el formulario.
+            Si nos parecen correctos los datos, le daremos a continuar y pasaremos a la cuarta p&aacute;gina en la cual
+            se agradece la participaci&oacute;n y nos redirige a la URL introducida aqu&iacute;.
+        </p>
+        <form id="formPag1">
+            <label for="textBoxPag1">*Inserta la URL:</label>
+            <input type="text" name="urlPag1" id="textBoxPag1">
+            <p id="errorUrlPag1"></p>
+            <br />
+        </form>
+        <p>Para confirmar los datos, haz click en "Continuar" arriba a la derecha.</p>
+        <p>*: Campos obligatorios</p>
+    </section>
+    <section id="sectionPag2" class="elementHide">
+        <form id="formPag2">
+            <label for="nomApeFormPag2">*Nombre y apellidos</label>
+            <input type="text" name="nomApePag2" id="nomApeFormPag2">
+            <p id="errorNomApePag2"></p>
+            <br />
+            <label for="nacFormPag2">*Fecha de nacimiento</label>
+            <input type="date" name="nacPag2" id="nacFormPag2">
+            <p id="errorNacPag2"></p>
+            <br />
+            <label for="dirFormPag2">Direcci&oacute;n</label>
+            <input type="text" name="dirPag2" id="dirFormPag2">
+            <p id="errorDirPag2"></p>
+            <br />
+            <label for="cpFormPag2">*C&oacute;digo postal</label>
+            <input type="number" name="cpPag2" id="cpFormPag2" maxlength = "5" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);">
+            <p id="errorCpPag2"></p>
+            <br />
+            <label for="provFormPag2">*Provincia</label>
+            <select name="provPag2" id="provFormPag2">
+                <option value="default"></option>
+                <option value="Alicante">Alicante</option>
+                <option value="Castellon">Castell&oacute;n</option>
+                <option value="Valencia">Valencia</option>
+            </select>
+            <p id="errorProvPag2"></p>
+            <br />
+            <label for="munFormPag2">*Municipio</label>
+            <input type="text" name="munPag2" id="munFormPag2" style="text-transform:uppercase">
+            <p id="errorMunPag2"></p>
+            <p>Para confirmar los datos, haz click en "Continuar" arriba a la derecha.</p>
+            <p>*: Campos obligatorios</p>
+        </form>
+    </section>
+    <section id="sectionPag3" class="elementHide">
+        <div>
+            <p id="mostrarNomApePag3"></p>
+            <p id="mostrarNacPag3"></p>
+            <p id="mostrarDirPag3"></p>
+            <p id="mostrarCpPag3"></p>
+            <p id="mostrarProvPag3"></p>
+            <p id="mostrarMunPag3"></p>
+            <p>¿Son los datos correctos? Pulsa "Continuar" para confirmar</p>
+            <button id="volverBoton" onclick="" class="elementHide botonSecundario">Atr&aacute;s</button>
+            <button id="aceptarBoton" onclick="" class="elementHide botonSecundario">Continuar</button>
+        </div>
+    </section>
+    <section id="sectionPag4" class="elementHide">
+        <h3>¡Datos enviados!</h3>
+        <p>Muchas gracias por participar.</p>
+        <button id="terminarBoton" onclick="" class="elementHide botonSecundario">Terminar</button>
+    </section>
+</body>
+</html>
